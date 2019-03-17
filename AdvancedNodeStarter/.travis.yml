@@ -1,12 +1,13 @@
 language: node_js
 node_js:
   - "8"
-dist: trusty
+dist: trusy
 services:
   - mongodb
   - redis-server
 env:
-  - NODE_ENV=ci PORT=3000
+  - NODE_ENV=ci
+  - PORT=3000
 cache:
   directories:
     - node_modules
